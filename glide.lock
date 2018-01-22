@@ -1,0 +1,180 @@
+hash: 0f618ec18e8fa7ec4ebc0d5db7574887e4293801340b5defa98c25edc54e58f7
+updated: 2018-01-16T09:36:23.796039+01:00
+imports:
+- name: cloud.google.com/go
+  version: 050b16d2314d5fc3d4c9a51e4cd5c7468e77f162
+  subpackages:
+  - compute/metadata
+  - iam
+  - internal
+  - internal/optional
+  - internal/version
+  - storage
+- name: github.com/fatih/color
+  version: 570b54cabe6b8eb0bc2dfce68d964677d63b5260
+- name: github.com/golang/protobuf
+  version: 1e59b77b52bf8e4b449a57e6f79f21226d571845
+  subpackages:
+  - proto
+  - protoc-gen-go/descriptor
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
+- name: github.com/googleapis/gax-go
+  version: 317e0006254c44a0ac427cc52a0e083ff0b9622f
+- name: github.com/mediocregopher/radix.v2
+  version: 4699b97613b74db996094bf03e19dd2ae90d8bbc
+  subpackages:
+  - redis
+- name: github.com/sqs/goreturns
+  version: e5bd430ebbfbdd93b81837ff965ce4464d26c8d9
+  subpackages:
+  - returns
+- name: github.com/urfave/cli
+  version: cfb38830724cc34fedffe9a2a29fb54fa9169cd1
+- name: golang.org/x/build
+  version: 0a3b622eb33925830e8b97f811555800e30d2476
+  subpackages:
+  - autocertcache
+- name: golang.org/x/crypto
+  version: 13931e22f9e72ea58bb73048bc752b48c6d4d4ac
+  subpackages:
+  - acme
+  - acme/autocert
+- name: golang.org/x/net
+  version: 5ccada7d0a7ba9aeb5d3aca8d3501b4c2a509fec
+  subpackages:
+  - context
+  - context/ctxhttp
+  - html
+  - html/atom
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+  - websocket
+- name: golang.org/x/oauth2
+  version: 30785a2c434e431ef7c507b54617d6a951d5f2b4
+  subpackages:
+  - google
+  - internal
+  - jws
+  - jwt
+- name: golang.org/x/text
+  version: e19ae1496984b1c655b8044a65c0300a3c878dd3
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: golang.org/x/tools
+  version: 8ea45f96742f825c49e900f42a01928554b5a6a0
+  subpackages:
+  - benchmark/parse
+  - blog
+  - blog/atom
+  - cmd/guru
+  - cmd/guru/serial
+  - container/intsets
+  - cover
+  - go/ast/astutil
+  - go/buildutil
+  - go/callgraph
+  - go/callgraph/cha
+  - go/callgraph/rta
+  - go/callgraph/static
+  - go/gccgoexportdata
+  - go/gcexportdata
+  - go/gcimporter15
+  - go/internal/gccgoimporter
+  - go/loader
+  - go/pointer
+  - go/ssa
+  - go/ssa/interp
+  - go/ssa/ssautil
+  - go/types/typeutil
+  - godoc
+  - godoc/analysis
+  - godoc/dl
+  - godoc/proxy
+  - godoc/redirect
+  - godoc/short
+  - godoc/static
+  - godoc/util
+  - godoc/vfs
+  - godoc/vfs/gatefs
+  - godoc/vfs/httpfs
+  - godoc/vfs/mapfs
+  - godoc/vfs/zipfs
+  - imports
+  - playground
+  - playground/socket
+  - present
+  - refactor/eg
+  - refactor/importgraph
+  - refactor/rename
+  - refactor/satisfy
+- name: google.golang.org/api
+  version: de3aa2cfa7f1c18dcb7f91738099bad280117b8e
+  subpackages:
+  - gensupport
+  - googleapi
+  - googleapi/internal/uritemplates
+  - googleapi/transport
+  - internal
+  - iterator
+  - option
+  - storage/v1
+  - transport/http
+- name: google.golang.org/appengine
+  version: 150dc57a1b433e64154302bdc40b6bb8aefa313a
+  subpackages:
+  - datastore
+  - internal
+  - internal/app_identity
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/memcache
+  - internal/modules
+  - internal/remote_api
+  - internal/urlfetch
+  - internal/user
+  - log
+  - memcache
+  - urlfetch
+  - user
+- name: google.golang.org/genproto
+  version: a8101f21cf983e773d0c1133ebc5424792003214
+  subpackages:
+  - googleapis/api/annotations
+  - googleapis/iam/v1
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: 1cd234627e6f392ade0527d593eb3fe53e832d4a
+  subpackages:
+  - balancer
+  - balancer/base
+  - balancer/roundrobin
+  - codes
+  - connectivity
+  - credentials
+  - encoding
+  - grpclb/grpc_lb_v1/messages
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - resolver
+  - resolver/dns
+  - resolver/passthrough
+  - stats
+  - status
+  - tap
+  - transport
+testImports: []

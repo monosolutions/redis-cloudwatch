@@ -1,0 +1,6 @@
+vendor/
+bin/
+pkg/
+src/
+config.conf
+cloudwatch-redis-metrics.exe
