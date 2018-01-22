@@ -1,5 +1,5 @@
-hash: 0f618ec18e8fa7ec4ebc0d5db7574887e4293801340b5defa98c25edc54e58f7
-updated: 2018-01-16T09:36:23.796039+01:00
+hash: edf8dda195d1b64f9d6c51a2a236532c77e2a2e0e11e159d4d5640e6b4ec810e
+updated: 2018-01-22T22:20:04.7284136+01:00
 imports:
 - name: cloud.google.com/go
   version: 050b16d2314d5fc3d4c9a51e4cd5c7468e77f162
@@ -10,8 +10,37 @@ imports:
   - internal/optional
   - internal/version
   - storage
+- name: github.com/aws/aws-sdk-go
+  version: 9ed0c8de252f04ac45a65358377103d5a1aa2d92
+  subpackages:
+  - aws
+  - aws/awserr
+  - aws/awsutil
+  - aws/client
+  - aws/client/metadata
+  - aws/corehandlers
+  - aws/credentials
+  - aws/credentials/ec2rolecreds
+  - aws/credentials/endpointcreds
+  - aws/credentials/stscreds
+  - aws/defaults
+  - aws/ec2metadata
+  - aws/endpoints
+  - aws/request
+  - aws/session
+  - aws/signer/v4
+  - internal/shareddefaults
+  - private/protocol
+  - private/protocol/query
+  - private/protocol/query/queryutil
+  - private/protocol/rest
+  - private/protocol/xml/xmlutil
+  - service/cloudwatch
+  - service/sts
 - name: github.com/fatih/color
   version: 570b54cabe6b8eb0bc2dfce68d964677d63b5260
+- name: github.com/go-ini/ini
+  version: 32e4c1e6bc4e7d0d8451aa6b75200d19e37a536a
 - name: github.com/golang/protobuf
   version: 1e59b77b52bf8e4b449a57e6f79f21226d571845
   subpackages:
@@ -23,6 +52,14 @@ imports:
   - ptypes/timestamp
 - name: github.com/googleapis/gax-go
   version: 317e0006254c44a0ac427cc52a0e083ff0b9622f
+- name: github.com/jmespath/go-jmespath
+  version: dd801d4f4ce7ac746e7e7b4489d2fa600b3b096b
+- name: github.com/mattn/go-colorable
+  version: 5411d3eea5978e6cdc258b30de592b60df6aba96
+  repo: https://github.com/mattn/go-colorable
+- name: github.com/mattn/go-isatty
+  version: 57fdcb988a5c543893cc61bce354a6e24ab70022
+  repo: https://github.com/mattn/go-isatty
 - name: github.com/mediocregopher/radix.v2
   version: 4699b97613b74db996094bf03e19dd2ae90d8bbc
   subpackages:
@@ -34,11 +71,11 @@ imports:
 - name: github.com/urfave/cli
   version: cfb38830724cc34fedffe9a2a29fb54fa9169cd1
 - name: golang.org/x/build
-  version: 0a3b622eb33925830e8b97f811555800e30d2476
+  version: 97940473a28032bb129ed36168372b5087215f88
   subpackages:
   - autocertcache
 - name: golang.org/x/crypto
-  version: 13931e22f9e72ea58bb73048bc752b48c6d4d4ac
+  version: 31469a2049ca68f6ce80281568c2d81dc700f104
   subpackages:
   - acme
   - acme/autocert
@@ -57,12 +94,17 @@ imports:
   - trace
   - websocket
 - name: golang.org/x/oauth2
-  version: 30785a2c434e431ef7c507b54617d6a951d5f2b4
+  version: b28fcf2b08a19742b43084fb40ab78ac6c3d8067
   subpackages:
   - google
   - internal
   - jws
   - jwt
+- name: golang.org/x/sys
+  version: e24f485414aeafb646f6fca458b0bf869c0880a1
+  repo: https://go.googlesource.com/sys
+  subpackages:
+  - unix
 - name: golang.org/x/text
   version: e19ae1496984b1c655b8044a65c0300a3c878dd3
   subpackages:
@@ -71,7 +113,7 @@ imports:
   - unicode/bidi
   - unicode/norm
 - name: golang.org/x/tools
-  version: 8ea45f96742f825c49e900f42a01928554b5a6a0
+  version: 99037e3760ed7d9c772c980caee42b17779b80ce
   subpackages:
   - benchmark/parse
   - blog
@@ -118,7 +160,7 @@ imports:
   - refactor/rename
   - refactor/satisfy
 - name: google.golang.org/api
-  version: de3aa2cfa7f1c18dcb7f91738099bad280117b8e
+  version: bc96e9251952e80de14b88579b2e2e7d022ca939
   subpackages:
   - gensupport
   - googleapi
@@ -154,7 +196,7 @@ imports:
   - googleapis/iam/v1
   - googleapis/rpc/status
 - name: google.golang.org/grpc
-  version: 1cd234627e6f392ade0527d593eb3fe53e832d4a
+  version: b71aced4a2a1ee80a1cbbd26b85a57623790d7f4
   subpackages:
   - balancer
   - balancer/base
