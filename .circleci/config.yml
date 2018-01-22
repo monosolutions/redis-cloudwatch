@@ -1,0 +1,40 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.8   
+    working_directory: /go/src/github.com/monosolutions/sredis-cloudwatch
+    steps:
+      - checkout
+      - restore_cache:
+         keys:
+           - glide-{{ checksum "glide.lock" }}
+           - glide- # used if checksum fails
+      - run:
+          name: Release Tool
+          command: go get github.com/goreleaser/goreleaser
+      - run:
+          name: Install Glide
+          command: curl https://glide.sh/get | sh      
+      - run: 
+          name: Dependencies
+          command: glide install
+      - save_cache:
+          key: glide-{{ checksum "glide.lock" }}
+          paths:
+            - "vendor"
+      - run:
+          name: Build          
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                VERSION="0.9.${CIRCLE_BUILD_NUM}"                         
+                git config --global user.email "${EMAIL}"
+                git config --global user.name "${USER}"
+                git tag -a $VERSION -m "v${VERSION}"            
+                goreleaser                   
+            fi
+
+      - store_artifacts:
+          path: dist/         
+
+                 
